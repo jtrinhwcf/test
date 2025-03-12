@@ -2,14 +2,25 @@ import core.widgets;
 import core.material;
 
 widget Counter = Scaffold(
-  appBar: AppBar(title: Text(text: "Counter Demo")),
-  body: Center(
-    child: Column(
-      mainAxisAlignment: "center",
-      children: [
-        Text(text: "Hello world"),
-        
-      ],
-    ),
-  ),
+  args:
+    appBar: AppBar(
+      args:
+        title: Text(
+          args:
+            text: "Counter Demo"
+        )
+    )
+    body: Center(
+      args:
+        child: Column(
+          args:
+            mainAxisAlignment: MainAxisAlignment.center
+            children: [
+              Text(
+                args:
+                  text: "Hello world"
+              )
+            ]
+        )
+    )
 );
